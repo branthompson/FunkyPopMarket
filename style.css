@@ -1,0 +1,284 @@
+body 
+{
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+header 
+{
+    background-color: #ff8c00;
+    padding: 20px;
+}
+
+nav ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li 
+{
+    display: inline;
+}
+
+nav ul li a 
+{
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+nav ul li a:hover 
+{
+    color: #000;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nav-login
+{
+    margin-left: auto;
+}
+
+#hero 
+{
+    background-image: url(Funko-background.png);
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content 
+{
+    text-align: center;
+    border: rgb(22, 50, 62) solid 4px;
+    background-color: rgba(5, 68, 95, 0.6);
+    padding: 50px;
+    border-radius: 25px;
+}
+
+.hero-content h1 
+{
+    font-size: 48px;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-content p 
+{
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.cta-button 
+{
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff8c00;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.cta-button:hover 
+{
+    background-color: #000;
+}
+
+#about 
+{
+    padding: 50px;
+}
+
+.about-content 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 50px;
+}
+
+.about-image img 
+{
+    width: 80%;
+    max-width: 400px;
+}
+
+.about-content h2 
+{
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+}
+
+.about-content p 
+{
+font-size: 24px;
+margin-top: 20px;
+}
+
+.about-image 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-content 
+{
+    padding: 100px 0;
+}
+
+.services-list 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.service-item 
+{
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.service-item img 
+{
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+}
+
+.service-item h3 
+{
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.service-item p 
+{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#reasons 
+{
+    background-color: #000;
+    padding: 50px;
+}
+
+.reasons-title 
+{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.reasons-title h2 
+{
+    font-size: 36px;
+    color: #ff8c00;
+    margin: 0;
+    padding: 0;
+}
+
+.reasons-list 
+{
+    display: flex;
+    justify-content: center;
+}
+
+.reason-item 
+{
+    width: 300px;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.reason-item img 
+{
+    height: 100px;
+    width: 170px;
+    margin-bottom: 20px;
+}
+
+.reason-item h3 
+{
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.reason-item p 
+{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#contact 
+{
+    background-color: #ff8c00;
+    padding: 50px;
+    text-align: center;
+}
+
+.contact-content h2 
+{
+    font-size: 36px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-content p 
+{
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.contact-content form 
+{
+    margin-top: 30px;
+}
+
+.contact-content input,
+.contact-content textarea 
+{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+}
+
+.contact-content input[type="submit"] 
+{
+    background-color: #000;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-content input[type="submit"]:hover 
+{
+    background-color: #ff8c00;
+}
+
