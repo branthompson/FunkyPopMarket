@@ -94,7 +94,7 @@ elseif (isset($_POST['remove'])) {
 		    // output data of each row
 		    while($row = $result->fetch_assoc()) {
 		        echo "<div class='pop'>";
-                echo "<img src='data:image/jpeg;base64," . base64_encode($row['image_data']) . "' />";
+                echo "<img class='image' src='data:image/jpeg;base64," . base64_encode($row['image_data']) . "' />";
                 echo "<p>" . $row['image_name'] . "</p>";
                 echo "<p>$" . $row['cost'] . "</p>";
                 echo "<form method='post' action=''>";

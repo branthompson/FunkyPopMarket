@@ -2,11 +2,13 @@
     border:solid;
     border-color: #000000;
     background-color: #383B39;
-}
-img{
-   background-color: #6a6c6d;
     width:200px;
-    height:150px;
+    height:300px;
+}
+.image{
+   background-color: #6a6c6d;
+    width: 100px;
+    height:100px;
 }
 p{
     color:white;
