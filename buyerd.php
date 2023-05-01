@@ -25,6 +25,7 @@ elseif (isset($_POST['remove'])) {
 ?>
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="buyerpage.css">
 <head>
     <title>Buyer Dashboard</title>
     <style>
