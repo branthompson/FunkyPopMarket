@@ -33,6 +33,7 @@ elseif (isset($_POST['remove'])) {
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+	<a href="home.php">Home Page</a></li>
 	<form method="post" action="">
 		<input type="text" name="search" placeholder="Search for a Funko Pop">
 		<input type="submit" name="submit" value="Search">
