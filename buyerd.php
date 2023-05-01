@@ -28,30 +28,7 @@ elseif (isset($_POST['remove'])) {
 <link rel="stylesheet" href="buyerpage.css">
 <head>
     <title>Buyer Dashboard</title>
-    <style>
-        img {
-            width: 100px;
-        }
-        header {
-            text-align: center;
-            font-size: larger;
-            color: red;
-        }
-		.funko {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-		}
-		.funko .pop {
-			flex-basis: 18%;
-			margin-bottom: 20px;
-			text-align: center;
-		}
-		.pop img {
-			max-width: 100%;
-			height: auto;
-		}
-	</style>
+   
     <!-- Add your CSS stylesheets -->
     <link rel="stylesheet" href="styles.css">
 </head>

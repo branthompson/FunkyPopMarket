@@ -3,7 +3,10 @@
     border-color: #000000;
     background-color: #383B39;
     width:200px;
-    height:300px;
+    height:250px;
+    flex-basis: 18%;
+    margin-bottom: 20px;
+    text-align: center;
 }
 .image{
    background-color: #6a6c6d;
@@ -12,4 +15,18 @@
 }
 p{
     color:white;
+}
+
+header {
+    text-align: center;
+    font-size: 50pt;
+    color: red;
+}
+.funko {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+body{
+    background-color: 	#2b2a29;
 }
