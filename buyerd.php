@@ -30,7 +30,6 @@ elseif (isset($_POST['remove'])) {
     <title>Buyer Dashboard</title>
    
     <!-- Add your CSS stylesheets -->
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 	<a class='homepage' href="home.php">Home Page</a></li>
@@ -74,8 +73,10 @@ elseif (isset($_POST['remove'])) {
 		    // output data of each row
 		    while($row = $result->fetch_assoc()) {
 		        echo "<div class='pop'>";
+				echo "<a href='details.php?id=" . $row['id'] . "'>";
                 echo "<img class='image' src='data:image/jpeg;base64," . base64_encode($row['image_data']) . "' />";
                 echo "<p>" . $row['image_name'] . "</p>";
+				echo "</a>";
                 echo "<p>$" . $row['cost'] . "</p>";
                 echo "<form method='post' action=''>";
                 echo "<input type='hidden' name='wishlist' value='" . $row['id'] . "'>";
