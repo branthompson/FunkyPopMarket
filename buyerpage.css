@@ -21,12 +21,9 @@ p{
     font-size: 13pt;
     font-family: Arial, sans-serif;
 }
-p:hover{
-    color:#9d5702;
 
-}
 .wishlist{
-    background-color: #9d5702;
+    background-color: #ff8c00;
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
     margin: 0 auto 50px;
     font-size: 15pt;
@@ -36,11 +33,11 @@ p:hover{
 }
 
 .search{
-    background-color: black;
+    background-color: white;
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
     margin: 0 auto 50px;
-    color:#9d5702;
-    border: #9d5702 solid 1px;
+    color:#ff8c00;
+    border: #ff8c00 solid 1px;
     font-size:20pt;
     font-family: Arial, sans-serif;
     top:100px;
@@ -48,12 +45,18 @@ p:hover{
     position:absolute;
 
 }
+
+.search:hover
+{
+    background-color: black;
+}
+
 .searchbar{
     background-color: black;
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
     margin: 0 auto 50px;
-    color:#9d5702;
-    border: #9d5702 solid 1px;
+    color:#ff8c00;
+    border: #ff8c00 solid 1px;
     font-family: Arial, sans-serif;
     font-size:20pt;
     top:100px;
@@ -64,8 +67,8 @@ p:hover{
     background-color: black;
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
     margin: 0 auto 50px;
-    color:#9d5702;
-    border: #9d5702 solid 1px;
+    color:#ff8c00;
+    border: #ff8c00 solid 1px;
     font-family: Arial, sans-serif;
 }
 header {
@@ -83,12 +86,19 @@ header {
 body{
     background-color: 	#2b2a29;
 }
-.backbutt{
-    background-color: #9d5702;
+
+.backbutt
+{
+    background-color: #ff8c00;
     box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
     margin: 0 auto 50px;
     font-size: 15pt;
     color:white;
     border: black solid 1px;
     font-family: Arial, sans-serif;
+}
+
+.wishlist:hover
+{
+    background-color: black;
 }
