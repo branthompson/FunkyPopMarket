@@ -19,3 +19,11 @@ body{
     background-image: url("png/funko-background.jpg");
     background-size: cover;
 }
+.homepage{
+    background-color: #9d5702;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    margin: 0 auto 50px;
+    color:white;
+    border: black solid 1px;
+    font-family: Arial, sans-serif;
+}
