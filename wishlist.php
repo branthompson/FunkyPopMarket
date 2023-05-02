@@ -47,7 +47,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
     </style>
     <!-- Add your CSS stylesheets -->
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>Wishlist</header>
