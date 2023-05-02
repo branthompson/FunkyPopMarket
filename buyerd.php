@@ -25,40 +25,20 @@ elseif (isset($_POST['remove'])) {
 ?>
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="buyerpage.css">
 <head>
-	<link rel="stylesheet" href="style.css">
     <title>Buyer Dashboard</title>
-    <style>
-        img {
-            width: 100px;
-        }
-        header {
-            text-align: center;
-            font-size: larger;
-            color: red;
-        }
-		.funko {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-		}
-		.funko .pop {
-			flex-basis: 18%;
-			margin-bottom: 20px;
-			text-align: center;
-		}
-		.pop img {
-			max-width: 100%;
-			height: auto;
-		}
-	</style>
+   
     <!-- Add your CSS stylesheets -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+	<a class='homepage' href="home.php">Home Page</a></li>
+	<br>
+	<br>
 	<form method="post" action="">
-		<input type="text" name="search" placeholder="Search for a Funko Pop">
-		<input type="submit" name="submit" value="Search">
+		<input class = 'searchbar'type="text" name="search" placeholder="Search for a Funko Pop">
+		<input class= 'search' type="submit" name="submit" value="Search">
 	</form>
     <header> Buyers Dashboard </header>
 	<br>
@@ -94,14 +74,12 @@ elseif (isset($_POST['remove'])) {
 		    // output data of each row
 		    while($row = $result->fetch_assoc()) {
 		        echo "<div class='pop'>";
-				echo "<a href='details.php?id=" . $row['id'] . "'>";
-                echo "<img src='data:image/jpeg;base64," . base64_encode($row['image_data']) . "' />";
+                echo "<img class='image' src='data:image/jpeg;base64," . base64_encode($row['image_data']) . "' />";
                 echo "<p>" . $row['image_name'] . "</p>";
-				echo "</a>";
                 echo "<p>$" . $row['cost'] . "</p>";
                 echo "<form method='post' action=''>";
                 echo "<input type='hidden' name='wishlist' value='" . $row['id'] . "'>";
-                echo "<input type ='submit' value='Add to Wishlist'>";
+                echo "<input class='wishlist' type ='submit' value='Add to Wishlist'>";
                 echo "</form>";
                 echo "</div>";
 		    }
@@ -114,7 +92,7 @@ elseif (isset($_POST['remove'])) {
 		?>
 	</div>
 	<p><?php echo $msg; ?></p>
-    <button onclick="window.location.href='wishlist.php'">View Wishlist</button>
+    <button class='wishlist' onclick="window.location.href='wishlist.php'">View Wishlist</button>
     
 </body>
 </html>
