@@ -27,6 +27,7 @@ if (isset($_FILES['image']) && $_FILES['image']['size'] > 0) {
         if ($conn->query($sql) === true) {
             $last_id = $conn->insert_id;
             echo "Image inserted successfully with ID: " . $last_id;
+            header('Location: buyerd.php');
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
