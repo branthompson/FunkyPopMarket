@@ -32,6 +32,7 @@ if (!isset($_SESSION['loggedin']))
                 <li><a href="#contact">Contact</a></li>
                 <li class="nav-login"><a href="login.php">Log in</a></li>
                 <li class="nav-login"><a href="buyerd.php">Buyer's Dashboard</a></li>
+                <li class="nav-login"><a href="insertingFunkopop.html">Seller's Dashboard</a></li>
 
             </ul>
         </nav>
