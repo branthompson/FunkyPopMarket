@@ -33,10 +33,12 @@ elseif (isset($_POST['remove'])) {
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<a href="home.php">Home Page</a></li>
+	<a class='homepage' href="home.php">Home Page</a></li>
+	<br>
+	<br>
 	<form method="post" action="">
-		<input type="text" name="search" placeholder="Search for a Funko Pop">
-		<input type="submit" name="submit" value="Search">
+		<input class = 'searchbar'type="text" name="search" placeholder="Search for a Funko Pop">
+		<input class= 'search' type="submit" name="submit" value="Search">
 	</form>
     <header> Buyers Dashboard </header>
 	<br>
@@ -77,7 +79,7 @@ elseif (isset($_POST['remove'])) {
                 echo "<p>$" . $row['cost'] . "</p>";
                 echo "<form method='post' action=''>";
                 echo "<input type='hidden' name='wishlist' value='" . $row['id'] . "'>";
-                echo "<input type ='submit' value='Add to Wishlist'>";
+                echo "<input class='wishlist' type ='submit' value='Add to Wishlist'>";
                 echo "</form>";
                 echo "</div>";
 		    }
@@ -90,7 +92,7 @@ elseif (isset($_POST['remove'])) {
 		?>
 	</div>
 	<p><?php echo $msg; ?></p>
-    <button onclick="window.location.href='wishlist.php'">View Wishlist</button>
+    <button class='wishlist' onclick="window.location.href='wishlist.php'">View Wishlist</button>
     
 </body>
 </html>

@@ -1,6 +1,6 @@
 .pop{
     border:solid;
-    border-color: #000000;
+    border-color: #ff8c00;
     background-color: #383B39;
     width:200px;
     height:250px;
@@ -12,15 +12,68 @@
    background-color: #6a6c6d;
     width: 100px;
     height:100px;
+    border:solid;
+    border-color: #ff8c00;
+    border-top:0px;
 }
 p{
     color:white;
+    font-size: 13pt;
+    font-family: Arial, sans-serif;
+}
+p:hover{
+    color:#9d5702;
+
+}
+.wishlist{
+    background-color: #9d5702;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    margin: 0 auto 50px;
+    font-size: 15pt;
+    color:white;
+    border: black solid 1px;
+    font-family: Arial, sans-serif;
 }
 
+.search{
+    background-color: black;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    margin: 0 auto 50px;
+    color:#9d5702;
+    border: #9d5702 solid 1px;
+    font-size:20pt;
+    font-family: Arial, sans-serif;
+    top:100px;
+
+    position:absolute;
+
+}
+.searchbar{
+    background-color: black;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    margin: 0 auto 50px;
+    color:#9d5702;
+    border: #9d5702 solid 1px;
+    font-family: Arial, sans-serif;
+    font-size:20pt;
+    top:100px;
+    left:110px;
+    position:absolute;
+}
+.homepage{
+    background-color: black;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    margin: 0 auto 50px;
+    color:#9d5702;
+    border: #9d5702 solid 1px;
+    font-family: Arial, sans-serif;
+}
 header {
     text-align: center;
     font-size: 50pt;
-    color: red;
+    color: #ff8c00;
+    top:20px;
+    font-family: Arial, sans-serif;
 }
 .funko {
     display: flex;
@@ -29,4 +82,13 @@ header {
 }
 body{
     background-color: 	#2b2a29;
+}
+.backbutt{
+    background-color: #9d5702;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    margin: 0 auto 50px;
+    font-size: 15pt;
+    color:white;
+    border: black solid 1px;
+    font-family: Arial, sans-serif;
 }

@@ -28,16 +28,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html>
 <head>
     <title>Wishlist</title>
+    <link rel="stylesheet" href="buyerpage.css">
     <style>
-        header {
-            text-align: center;
-            font-size: larger;
-            color: red;
-        }
         .wishlist {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
+            
         }
         .wishlist .pop {
             flex-basis: 18%;
@@ -79,12 +76,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             if ($result->num_rows > 0) {
                 while ($row = $result->fetch_assoc()) {
                     echo "<div class='pop'>";
-                    echo "<img src='data:image/jpeg;base64," . base64_encode($row['image_data']) . "' />";
+                    echo "<img class='image'src='data:image/jpeg;base64," . base64_encode($row['image_data']) . "' />";
                     echo "<p>" . $row['image_name'] . "</p>";
                     echo "<p>$" . $row['cost'] . "</p>";
                     echo "<form method='post' action=''>";
                     echo "<input type='hidden' name='remove' value='" . $row['id'] . "'>";
-                    echo "<input type ='submit' value='Remove from Wishlist'>";
+                    echo "<input class='wishlist'type ='submit' value='Remove from Wishlist'>";
                     echo "</form>";
                     echo "</div>";
                 }
@@ -102,7 +99,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $conn->close();
         ?>
     </div>
-    <button onclick="window.location.href='buyerd.php'">Back to Dashboard</button>
+    <button class='backbutt'onclick="window.location.href='buyerd.php'">Back to Dashboard</button>
     
 </body>
 </html
