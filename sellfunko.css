@@ -24,7 +24,7 @@ h1{
     color:#ff8c00;
 }
 body{
-    background-color: black;
+    background-image: url("png/funko-background.jpg");
     background-size: cover;
 }
 .homepage{
